@@ -1,0 +1,109 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 80px;
+  border-bottom: 1px solid #D5D5D5;
+  background-color: white;
+  z-index: 10;
+}
+
+.logo {
+  margin-right: 16px;
+}
+
+.buttons {
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  text-decoration: none;
+  padding: 4px 4px;
+  border-bottom: 1px solid white;
+}
+
+.micIcon {
+  margin-left: 8px;
+  margin-right: 16px;
+  color: #007DB9;
+}
+
+.micIcon:hover {
+  color: #007DB9;
+  color: #00BCF1;
+}
+
+.micButton {
+  color: #007DB9;
+}
+
+.micButton:hover {
+  cursor: pointer;
+}
+
+/* .noClick {
+  pointer-events: none;
+} */
+
+.errorDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 12px;
+  text-align: center;
+  width: 300px;
+  padding: 12px;
+  background-color: white;
+  box-shadow: 1px 2px 6px 1px #4d4d4d;
+  z-index: 2;
+
+  .alertText {
+    color: #4d4d4d;
+    margin-bottom: 8px;
+  }
+
+  .inputText {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-style: italic;
+  }
+}
+
+.alertFootnote {
+  line-height: 22px;
+  color: #4d4d4d;
+}
+
+.buttonHidden {
+  display: none;
+}
+
+.buttonActive {
+  position: relative;
+  left: 144px;
+  top: -6px;
+  margin-bottom: -12px;
+}
+
+.buttonActive:hover {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+a:link {
+  color: #007DB9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00BCF1;
+}
+
+a.active {
+  color: #4d4d4d;
+  border-bottom: 1px solid #4d4d4d;
+}

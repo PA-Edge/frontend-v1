@@ -1,0 +1,41 @@
+@import url('https://use.typekit.net/tye3bne.css');
+/* Adobe font import. This ### MUST ### be the first thing in the css file */
+
+html{
+	font-family: jaf-bernina-sans, jaf-bernina-sans-condensed, 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+	}
+
+body{
+	font-size: 62.5%;
+	background-color: #F5F8FB;
+	}
+
+a:link{color: #007DB9; text-decoration: none;}
+a:visited{color: #007DB9; text-decoration: none;}
+a:hover{color: #00BCF1; text-decoration: underline;}
+a:active{color: #00B5AF; text-decoration: underline;}
+
+.top_nav{font-size: 1.5rem;}
+
+.top_nav a.current_selection{color: #4d4d4d;}
+
+/* .top_nav a.current_selection [[ underline ]] {
+	color: #EC1C24;
+	height: 1px;
+	width: [[ same-as-the-word ]]
+	[[ distance-from-word ]] : 10px;
+	} */
+
+.footer_links{font-size: 1.2rem;}
+
+.edge_logo{
+	width: 97px;
+	height: 60px;
+	}
+
+.southern_company_gas_logo{
+	width: 172px;
+	height: 21px;
+	}

@@ -1,0 +1,21 @@
+.splashContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.loginButton {
+  padding: 12px 24px;
+  margin: 16px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #959595;
+}
+.loginButton:hover {
+  background-color: #E8E8E8;
+  /* color: white; */
+}

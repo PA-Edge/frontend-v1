@@ -1,0 +1,245 @@
+{
+  "homepage": [
+    {
+      "name": "{KPI display name}",
+      "values": [
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }, // trend being whether the metric is moving down, neutral, or up as values of 0-2, default of 1
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }, // status being whether a metric is bad, neutral, or good with values 0-2, default of 1
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        } // LDC-name being like "CGI"
+      ]
+    },
+    {
+      "name": "{KPI display name}", // there will be exactly 7 KPIs for the homepage
+      "values": [ // how many items in values array will depend on role ("ALL" role will have the most)
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "name": "{KPI display name}",
+      "values": [
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "name": "{KPI display name}",
+      "values": [
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "name": "{KPI display name}",
+      "values": [
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "name": "{KPI display name}",
+      "values": [
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "name": "{KPI display name}",
+      "values": [
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        },
+        {
+          "LDC": "{LDC-name}",
+          "value": 12.3,
+          "trend": 0,
+          "status": 2
+        }
+      ]
+    }
+  ],
+  "pages": [ // frontend will create a page for each item in pages array
+    {
+      "name": "Damages",
+      "KPIs": [ // this will be the page name
+        { // front end will map each item in this array to a hexagon displayed on the page
+          "name": "{KPI display name}", // these will be the hexagon display names
+          "values": [
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            },
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            }
+          ]
+        },
+        {
+          "name": "{KPI display name}",
+          "values": [
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            },
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Leaks",
+      "KPIs": [
+        {
+          "name": "{KPI display name}",
+          "values": [
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            },
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            }
+          ]
+        },
+        {
+          "name": "{KPI display name}",
+          "values": [
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            },
+            {
+              "LDC": "{LDC-name}",
+              "value": 12.3,
+              "trend": 0,
+              "status": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

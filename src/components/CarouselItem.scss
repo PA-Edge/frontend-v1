@@ -1,0 +1,164 @@
+.carouselItemContainer {
+  height: 0.1px;
+  width: 0.1px;
+  align-self: center;
+  background-color: red;
+  display: flex;
+  // z-index: 100;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}n) {
+      animation: scale 2s linear #{$i * 0.25}s infinite;
+    }
+  }
+
+  .carouselItem {
+    opacity: 0;
+    // opacity: 1;
+    // animation: hexagonFade .5s ease-in 2.3s forwards;
+    filter: drop-shadow(0 0 10px rgba(white, 1));
+    -webkit-filter: drop-shadow(0 0 10px rgba(white, 1)) drop-shadow(0 0 20px rgba(white, .2));
+
+    .lineAnimation {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      // z-index: 100;
+      display: none;
+    }
+
+    .animation1 {
+      top: 116px;
+      left: 200px;
+      opacity: 0;
+      // animation: lineAnimation 1s ease 2.3s forwards;
+
+    }
+
+    .animation2 {
+      top: 116px;
+      left: -20px;
+    }
+
+    .animation3 {
+      top: 206px;
+      left: 150px;
+      rotate: 60deg;
+    }
+
+    .animation4 {
+      top: 20px;
+      left: 36px;
+      rotate: 60deg;
+    }
+
+    .animation5 {
+      top: 206px;
+      left: 30px;
+      rotate: -60deg;
+    }
+
+    .animation6 {
+      top: 20px;
+      left: 146px;
+      rotate: -60deg;
+    }
+  }
+
+  @keyframes hexagonFade {
+    0% {
+      opacity: 0;
+      // transform: scale(0.5);
+    }
+
+    100% {
+      opacity: 1;
+      // transform: scale(1);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.01);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes lineAnimation {
+    0% {
+      right: 100%;
+      opacity: 0;
+    }
+
+    1% {
+      opacity: 1;
+    }
+
+    50% {}
+
+    100% {
+      right: 0%;
+      opacity: 1;
+    }
+  }
+
+  .hexagon1 {
+    position: relative;
+    left: -320px;
+    display: flex;
+    align-self: center;
+    animation: hexagonFade .5s ease-in 2.3s forwards;
+  }
+
+  .hexagon2 {
+    position: relative;
+    left: -80px;
+    display: flex;
+    align-self: center;
+    animation: hexagonFade .5s ease-in 2.5s forwards;
+  }
+
+  .hexagon3 {
+    position: relative;
+    top: -190px;
+    left: -610px;
+    display: flex;
+    align-self: center;
+    animation: hexagonFade .5s ease-in 2.37s forwards;
+  }
+
+  .hexagon4 {
+    position: relative;
+    top: 190px;
+    left: -590px;
+    display: flex;
+    align-self: center;
+    animation: hexagonFade .5s ease-in 2.55s forwards;
+  }
+
+  .hexagon5 {
+    position: relative;
+    top: -190px;
+    left: -790px;
+    display: flex;
+    align-self: center;
+    animation: hexagonFade .5s ease-in 2.44s forwards;
+  }
+
+  .hexagon6 {
+    position: relative;
+    top: 190px;
+    left: -1210px;
+    display: flex;
+    align-self: center;
+    animation: hexagonFade .5s ease-in 2.6s forwards;
+  }
+}

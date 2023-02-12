@@ -1,0 +1,25 @@
+body {
+  /* font-size: 62.5%; */
+  background-color: #E8E8E8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.appbody {
+  height: calc(100vh - 147px);
+}
+
+.pageBody {
+  height: inherit;
+  padding: 0px 80px 16px 80px;
+}
+
+@media screen and (max-width: 1400px) {
+  .pageBody {
+    height: inherit;
+    padding: 0px 24px 16px 24px;
+  }
+}
+
+.iframe-height {
+  height: calc(100% - 68px);
+}

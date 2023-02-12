@@ -1,0 +1,35 @@
+.cube_container{
+	pointer-events: none; /* disables hover and click */
+	}
+
+.cube_container .panel{
+	pointer-events: all; /* enables hover and click */
+	cursor: pointer; /* use browser default as pointer when hovering */
+	}
+
+.cube_container .panel *{
+	pointer-events: none; /* disables hover and click */
+	}
+
+.panel{
+	transform: scale(0.33);
+	opacity: 0;
+	transition: transform .5s ease, opacity .5s; /* if this element has a class added with a different transform and/or opacity then morph from the start point as defined in this class to the end point as defined in the added class. If the added class is later removed this transition will automatically play backwards. */
+	}
+
+.panel.-open{
+	transform: scale(1);
+	opacity: 1;
+	}
+
+.arrow{
+	pointer-events: none;
+	transform: translate(0.01px 0.01px);/* a more-compatible version of zero and zero. Some browsers see zero as "nothing" and delete it. */
+	opacity: .5;
+	transition: transform .3s ease, opacity .1s;
+	}
+
+.arrow.-hover{
+	transform: translate(-10px 0.01px);
+	opacity: 1;
+	}

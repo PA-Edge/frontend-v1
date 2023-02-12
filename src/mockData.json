@@ -1,0 +1,365 @@
+{
+  "Pages": [
+    {
+      "Name": "Damages",
+      "PrimaryKPI": {
+        "Name": "Damage Ratio",
+        "Values": [
+          {
+            "Ldc": "ALL",
+            "Value": 12.8,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "VNG",
+            "Value": 12.0,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "CGC",
+            "Value": 13.0,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "NGC",
+            "Value": 14.0,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "AGLC",
+            "Value": 15.0,
+            "Trend": 123,
+            "Status": 1
+          }
+        ]
+      },
+      "KPIs": [
+        {
+          "Name": "Damage Ratio",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "Name": "Locator At-Fault Ratio",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "Name": "Locator On-Time Performance",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "Name": "Damage Volume",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "Name": "Locator Ticket Volume",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Leaks",
+      "PrimaryKPI": {
+        "Name": "Leak Response Rate",
+        "Values": [
+          {
+            "Ldc": "ALL",
+            "Value": 10.6,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "VNG",
+            "Value": 12.0,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "CGC",
+            "Value": 13.0,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "NGC",
+            "Value": 14.0,
+            "Trend": 123,
+            "Status": 1
+          },
+          {
+            "Ldc": "AGLC",
+            "Value": 15.0,
+            "Trend": 123,
+            "Status": 1
+          }
+        ]
+      },
+      "KPIs": [
+        {
+          "Name": "Leaks KPI",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "Name": "Leaks2 KPI",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "Name": "Leaks3 KPI",
+          "Values": [
+            {
+              "Ldc": "ALL",
+              "Value": 12.8,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "VNG",
+              "Value": 12.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "CGC",
+              "Value": 13.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "NGC",
+              "Value": 14.0,
+              "Trend": 123,
+              "Status": 1
+            },
+            {
+              "Ldc": "AGLC",
+              "Value": 15.0,
+              "Trend": 123,
+              "Status": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+    

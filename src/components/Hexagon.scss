@@ -1,0 +1,103 @@
+$randomDelay: random(5);
+
+.basicHexagon {
+  display: inline-block;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  z-index: 10;
+  filter: drop-shadow(0 0 10px rgba(#444, .4));
+  -webkit-filter: drop-shadow(0 0 10px rgba(#444, .4));
+  // animation: float 2s linear infinite;
+  // animation-delay: random(5);
+  // box-shadow: #000000;
+
+  @keyframes float {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.02);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pageLevelHexagonContainer {
+    color: white;
+    position: relative;
+    top: 52px;
+    // display: flex;
+    text-align: center;
+
+    .pageName {
+      // background-color: rgba($color: #000000, $alpha: .25);
+      font-size: 28px;
+      padding: 8px 12px;
+      max-width: 200px;
+      // border: 2px solid white;
+      // border-radius: 10px;
+      text-shadow: 0px 1px 1px #4D4D4D,
+        // 1px 2px 1px #919191,
+        // 1px 3px 1px #919191,
+        // 1px 4px 1px #919191,
+        // 1px 5px 1px #919191,
+        // 1px 6px 1px #919191,
+        // 1px 7px 1px #919191,
+        // 1px 8px 1px #919191,
+        // 1px 9px 1px #919191,
+        // 1px 10px 1px #919191,
+
+    }
+
+    .primaryKPI {
+      max-width: 200px;
+      padding: 12px;
+      font-size: 18px;
+      background-color: rgba($color: #000000, $alpha: .2);
+      text-shadow: 0px 1px 1px #4D4D4D,
+    }
+
+    .pageLevelPlus {
+      position: relative;
+      left: 48px;
+      width: fit-content;
+      // padding: 3px 12px;
+      margin-bottom: -2px;
+      font-size: 24px;
+      color: #959595;
+    }
+  }
+
+  // .pageLevelHexagonContainer:hover {
+  //   color: white;
+  // }
+}
+
+.basicHexagon:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+
+  .pageLevelPlus {
+    color: white;
+    opacity: 1;
+  }
+}
+
+.basicHexagon:hover+.hexagonBorder {
+  display: inline-block;
+}
+
+.hexagonBorder {
+  position: absolute;
+  display: none;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  left: -4px;
+  top: -4.4px;
+  z-index: 5;
+}
+
+//  > .pageLevelHexagonContainer > .pageLevelPlus {
+//   color: white;
+// }

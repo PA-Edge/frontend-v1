@@ -1,0 +1,25 @@
+{
+  "inputs": [
+    {"text": "fault", "route": "/locator-at-fault-ratio"},
+    {"text": "locate our fault", "route": "/locator-at-fault-ratio"},
+    {"text": "locate at fault", "route": "/locator-at-fault-ratio"},
+    {"text": "look here at fault", "route": "/locator-at-fault-ratio"},
+    {"text": "locator at fault", "route": "/locator-at-fault-ratio"},
+    {"text": "damages", "route": "/damages"},
+    {"text": "ratio insight", "route": "/damage-ratio-insights"},
+    {"text": "ratio inside", "route": "/damage-ratio-insights"},
+    {"text": "ratio in size", "route": "/damage-ratio-insights"},
+    {"text": "damage ratio", "route": "/damage-ratio"},
+    {"text": "diamond ratio", "route": "/damage-ratio"},
+    {"text": "diamonds ratio", "route": "/damage-ratio"},
+    {"text": "download ratio", "route": "/damage-ratio"},
+    {"text": "download the ratio", "route": "/damage-ratio"},
+    {"text": "image ratio", "route": "/damage-ratio"},
+    {"text": "dammit ratio", "route": "/damage-ratio"},
+    {"text": "damned ratio", "route": "/damage-ratio"},
+    {"text": "diane is ratio", "route": "/damage-ratio"},
+    {"text": "home", "route": "/"},
+    {"text": "whom", "route": "/"},
+    {"text": "cube", "route": "/"}
+  ]
+}

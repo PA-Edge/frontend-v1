@@ -1,0 +1,567 @@
+@import url('https://use.typekit.net/tye3bne.css');
+
+/* Adobe font import. This ### MUST ### be the first thing in the css file */
+
+$cubeSpread: 40px;
+$bodyHeight: calc(100vh - 147px);
+$cubeScale: $bodyHeight;
+
+.dotsContainer {
+  position: absolute;
+  top: 830px;
+  left: 896px;
+  // display: flex;
+  padding: 4px 4px 2px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .08);
+  // box-shadow: 0 0 0 3 rgba(255, 255, 255, .6);
+
+  .carouselDots {
+    margin: 5px;
+  }
+}
+
+.carouselPrev {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .08);
+  top: 460px;
+  left: 80px;
+  padding: 10px;
+}
+
+.carouselNext {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .08);
+  top: 460px;
+  left: 1800px;
+  padding: 10px;
+}
+
+.home {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: $bodyHeight;
+}
+
+.homescreenBackground {
+  position: absolute;
+  top: 92px;
+  height: $bodyHeight;
+  width: 100%;
+  box-shadow: inset 0 0 calc($bodyHeight) rgba(255, 255, 255, .6);
+  background-image: url(../images/3d_hex_bg_assets/sphere_effect_white_e.png);
+  background-size: 100%;
+  background-position: center;
+  opacity: 0;
+  animation: hexagonFade 1s ease-in 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.homescreenBackgroundRainbow {
+  position: absolute;
+  top: 92px;
+  height: $bodyHeight;
+  width: 100%;
+  background: linear-gradient(-60deg, #007db9, #00B5AF, #00BCF1, #F26322);
+  background-size: 150% 150%;
+  animation: gradient 20s linear .3s infinite, backgroundFade 1s ease-in 1.3s forwards;
+  opacity: 0;
+}
+
+@keyframes backgroundFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.cubeContainer {
+  display: flex;
+  position: absolute;
+  top: calc(50vh - 126px);
+  width: 245px;
+  // animation: shake 0.5s forwards;
+  // height: 0px;
+}
+
+.smallCube {
+  position: absolute;
+}
+
+.logoHexagon {
+  position: absolute;
+  top: 28px;
+  left: 22px;
+  z-index: 4;
+  opacity: 0;
+  animation: hexagonFade .5s ease-in 1.2s forwards;
+  filter: drop-shadow(0 0 12px rgba(#4D4D4D, .4));
+  -webkit-filter: drop-shadow(0 0 12px rgba(#4D4D4D, .4));
+}
+
+.hexagon {
+  position: absolute;
+  filter: brightness(1000);
+  width: 200px;
+  // min-width: 150px;
+}
+
+.cubeLogo {
+  position: absolute;
+  top: 73px;
+  left: 36px;
+  width: 132px;
+}
+
+.hexText {
+  position: absolute;
+  font-size: 24px;
+  top: 133px;
+  left: 17px;
+  padding-top: 8px;
+  color: #4d4d4d;
+  border-top: 1px solid #4d4d4d;
+  opacity: 0;
+  animation: hexagonFadeZoom .5s ease-in 1.8s forwards;
+  text-shadow: 0px 2px 1px #E8E8E8,
+}
+
+.hex1 {
+  position: absolute;
+  top: -200px;
+  left: -100px;
+}
+
+@keyframes hexagonFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hexagonFadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cubeFade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.bottomCenter {
+  z-index: 1;
+  bottom: -290px;
+  left: 63px;
+  animation-name: bottom, cubeFade;
+  animation-delay: 0.2s, .8s;
+  animation-duration: 2s, 1s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottom {
+  0% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(1.5*$cubeSpread) scale(0.9);
+  }
+}
+
+.middleCenter {
+  z-index: 2;
+  bottom: -215px;
+  left: 63px;
+  animation: middle, cubeFade;
+  animation-delay: 0.2s, 1.2s;
+  animation-duration: 2s, .8s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle {
+  0% {
+    transform: scale(1);
+  }
+
+  // 1% {
+  //   transform: scale(1.8);
+  // }
+  100% {
+    transform: scale(1.8);
+  }
+}
+
+.topCenter {
+  z-index: 0;
+  left: 63px;
+  bottom: -139px;
+  animation-name: top, cubeFade;
+  animation-delay: 0.2s, .7s;
+  animation-duration: 1.5s, 1s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  100% {
+    transform: translateY(-$cubeSpread) scale(0.75);
+  }
+}
+
+.bottomLeft {
+  z-index: 0;
+  bottom: -252px;
+  animation-name: bottomLeft, cubeFade;
+  animation-delay: 0.2s, .7s;
+  animation-duration: 2s, 1s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottomLeft {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  100% {
+    transform: translate(-$cubeSpread, $cubeSpread) scale(0.75);
+  }
+}
+
+.topLeft {
+  z-index: 1;
+  bottom: -177px;
+  animation-name: topLeft, cubeFade;
+  animation-delay: 0.2s, .8s;
+  animation-duration: 2s, 1s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes topLeft {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  100% {
+    transform: translate(-1.5*$cubeSpread, -1.5*$cubeSpread) scale(0.9);
+  }
+}
+
+.bottomRight {
+  z-index: 0;
+  bottom: -251px;
+  left: 127px;
+  animation-name: bottomRight, cubeFade;
+  animation-delay: 0.2s, .7s;
+  animation-duration: 2s, 1s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottomRight {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  100% {
+    transform: translate($cubeSpread, $cubeSpread) scale(0.75);
+  }
+}
+
+.topRight {
+  z-index: 1;
+  left: 127px;
+  bottom: -177px;
+  animation-name: topRight, cubeFade;
+  animation-delay: 0.2s, .8s;
+  animation-duration: 2s, 1s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes topRight {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  100% {
+    transform: translate(1.5*$cubeSpread, -1.5*$cubeSpread) scale(0.9);
+  }
+}
+
+.plusArrowLeft {
+  position: absolute;
+  z-index: 5;
+  bottom: -94px;
+  left: 17px;
+  opacity: .5;
+  transform: translate(0.01px 0.01px);
+  transition: transform .2s ease, opacity .1s;
+  padding: 2px 20px 2px 2px;
+}
+
+.plusArrowTop {
+  position: absolute;
+  z-index: 5;
+  bottom: -52px;
+  left: 90px;
+  opacity: .5;
+  transform: translate(0.01px 0.01px);
+  transition: transform .2s ease, opacity .1s;
+  padding: 2px 2px 20px 2px;
+}
+
+.plusArrowRight {
+  position: absolute;
+  z-index: 5;
+  bottom: -94px;
+  left: 161px;
+  opacity: .5;
+  transform: translate(0.01px 0.01px);
+  transition: transform .2s ease, opacity .1s;
+  padding: 2px 2px 2px 20px;
+}
+
+.plusArrowLeft:hover {
+  opacity: 1;
+  transform: translate(-5px, 0.01px);
+}
+
+.plusArrowTop:hover {
+  opacity: 1;
+  transform: translate(0.01px, -3px);
+}
+
+.plusArrowRight:hover {
+  opacity: 1;
+  transform: translate(5px, 0.01px);
+}
+
+.rightPanel {
+  position: absolute;
+  z-index: 3;
+  bottom: -178px;
+  transform: scale(0.33);
+  opacity: 0;
+  transition: transform .5s ease, opacity .5s;
+}
+
+.rightPanel-open {
+  position: absolute;
+  z-index: 3;
+  bottom: -178px;
+  left: 127px;
+  /* transform: scale(1); */
+  opacity: 1;
+}
+
+.rightPanelButton {
+  position: absolute;
+  bottom: 55px;
+  left: 145px;
+  background-color: white;
+  color: #007DB9;
+  border-radius: 0;
+  border-color: #007DB9;
+  padding: 8px;
+}
+
+.rightPanelButton:hover {
+  background-color: white;
+}
+
+.buttonArrowRight {
+  margin-left: 8px;
+  filter: invert(46%) sepia(68%) saturate(6449%) hue-rotate(179deg) brightness(90%) contrast(101%);
+}
+
+.leftPanel {
+  position: absolute;
+  z-index: 3;
+  bottom: -178.5px;
+  left: -247px;
+  opacity: 0;
+}
+
+.leftPanel-open {
+  position: absolute;
+  z-index: 3;
+  bottom: -178.5px;
+  left: -247px;
+  opacity: 1;
+}
+
+.leftPanelButton {
+  position: absolute;
+  bottom: 55px;
+  left: 145px;
+  background-color: white;
+  color: #007DB9;
+  border-radius: 0;
+  border-color: #007DB9;
+  padding: 8px;
+}
+
+.leftPanelButton:hover {
+  background-color: white;
+}
+
+.buttonArrowLeft {
+  margin-left: 8px;
+  filter: invert(46%) sepia(68%) saturate(6449%) hue-rotate(179deg) brightness(90%) contrast(101%);
+}
+
+.topPanel {
+  position: absolute;
+  z-index: 3;
+  bottom: -69.5px;
+  left: -61px;
+  opacity: 0;
+}
+
+.topPanel-open {
+  position: absolute;
+  z-index: 3;
+  bottom: -69.5px;
+  left: -61px;
+  opacity: 1;
+}
+
+.topPanelButton {
+  position: absolute;
+  bottom: 55px;
+  left: 145px;
+  background-color: white;
+  color: #007DB9;
+  border-radius: 0;
+  border-color: #007DB9;
+  padding: 8px;
+}
+
+.topPanelButton:hover {
+  background-color: white;
+}
+
+.buttonArrowTop {
+  margin-left: 8px;
+  filter: invert(46%) sepia(68%) saturate(6449%) hue-rotate(179deg) brightness(90%) contrast(101%);
+}
+
+.panelText {
+  position: absolute;
+  color: white;
+  opacity: 100%;
+  width: 300px;
+  bottom: 107px;
+  font-size: 28px;
+}
+
+.rightPanelText {
+  position: absolute;
+  left: 60px;
+}
+
+.leftPanelText {
+  position: absolute;
+  left: 100px;
+}
+
+.topPanelText {
+  position: absolute;
+  left: 60px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
